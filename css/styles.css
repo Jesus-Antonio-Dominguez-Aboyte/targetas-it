@@ -1,0 +1,133 @@
+/*
+Colores
+  Tarjetas
+    Red: hsl(0, 78%, 62%)
+    Cyan: hsl(180, 62%, 55%)
+    Orange: hsl(34, 97%, 64%)
+    Blue: hsl(212, 86%, 64%)
+  Sombra
+    Dark Blue: hsl(240, 25%, 50%) al 20% de opacidad;
+  Texto
+    Grey: hsl(229, 6%, 66%)
+  Fondo de la tarjeta y del background
+    White: hsl(0, 0%, 93%)
+
+Fuente de la página
+  https://fonts.google.com/specimen/Poppins
+  Estilos 200, 400 y 600
+*/
+
+html, body{
+  box-sizing: border-box;
+  margin: 0;
+  
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+
+
+.encabezado{
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.encabezado .text-top{
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+.encabezado .text-center{
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-size: 35px;
+}
+.encabezado .text-bottom{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgba(128, 128, 128, 0.576);
+}
+
+.container{
+  
+  position: relative;
+  width: 1230px;
+  height: 550px;
+  margin: 5em auto;
+  
+}
+
+.card_body {
+  background-color:rgba(255, 255, 255, 0.752);
+  width: 380px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow:  5px 5px 10px hsl(0, 2%, 90%) ;
+
+}
+
+.card_style{
+  background-color:transparent;
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+}
+.text-card{
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.description{
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  font-weight: 400;
+  color: rgba(128, 128, 128, 0.576);
+}
+
+.card_style img{
+  background-color: transparent;
+  margin-left: 270px;
+  margin-top: 30px;
+}
+
+
+.card_1{
+  border-top: thick solid cyan;
+  position: absolute;
+  
+  left: 0px;
+}
+.card_2{
+  border-top: thick solid red;
+  position: absolute;
+  top: 0;
+ 
+}
+.card_3{
+  border-top: thick solid orange;
+    position: absolute;
+  bottom: 0;
+  
+}
+.card_4{
+  border-top: thick solid rgb(0, 110, 255);
+    position: absolute;
+  
+  right: 0;
+}
+
+.card_1,
+.card_4{
+  top: 150px;
+}
+
+.card_2,
+.card_3{
+  left: 425px;
+}
